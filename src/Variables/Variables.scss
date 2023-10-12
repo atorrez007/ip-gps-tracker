@@ -1,0 +1,31 @@
+// COLORS
+
+$veryDarkGray: hsl(0, 0%, 17%);
+$darkGray: hsl(0, 0%, 59%);
+
+// FONT
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-VariableFont_wght.ttf");
+}
+
+$mediumFont: "Rubik";
+
+@mixin mediumFont400 {
+  font-family: $mediumFont;
+  font-weight: 400;
+}
+@mixin mediumFont500 {
+  font-family: $mediumFont;
+  font-weight: 500;
+}
+@mixin mediumFont700 {
+  font-family: $mediumFont;
+  font-weight: 700;
+}
+
+@mixin textInputConfig {
+  @include mediumFont500;
+  font-size: 18px;
+}

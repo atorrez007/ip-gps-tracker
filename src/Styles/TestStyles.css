@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-VariableFont_wght.ttf");
+}
+@media (min-width: 375px) {
+  .test {
+    font-family: "Rubik";
+    font-weight: 400;
+  }
+}
+@media (min-width: 960px) {
+  .test {
+    font-family: "Rubik";
+    font-weight: 700;
+  }
+}/*# sourceMappingURL=TestStyles.css.map */

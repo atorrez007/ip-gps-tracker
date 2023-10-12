@@ -1,0 +1,12 @@
+@import "../Variables/Variables.scss";
+@import "../Breakpoints/Breakpoints.scss";
+
+.test {
+  @include mobile {
+    @include mediumFont400;
+  }
+
+  @include desktop {
+    @include mediumFont700;
+  }
+}
