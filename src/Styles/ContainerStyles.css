@@ -1,0 +1,20 @@
+.container-styles {
+  height: 100vh;
+  width: auto;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  height: 19em;
+  width: 100%;
+}
+
+.image-styling {
+  width: 100%;
+  height: auto;
+}
+
+.map-container {
+  height: 66%;
+}/*# sourceMappingURL=ContainerStyles.css.map */

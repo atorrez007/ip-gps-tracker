@@ -1,9 +1,9 @@
-import Test from "@/components/Test";
+import Container from "@/components/Container";
 
 export default function Home() {
   return (
     <div>
-      <Test />
+      <Container />
     </div>
   );
 }
