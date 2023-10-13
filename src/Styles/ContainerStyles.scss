@@ -1,20 +1,9 @@
 .container-styles {
-  // background-color: orange;
-  height: 100vh;
-  width: auto;
-}
-
-// To alter bg photo placement.
-.image-container {
   display: flex;
-  justify-content: center;
-  height: 19em;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100vh;
   width: 100%;
-}
-
-.image-styling {
-  width: 100%;
-  height: auto;
 }
 
 .map-container {

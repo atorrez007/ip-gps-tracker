@@ -1,13 +1,12 @@
 "use client";
+import "../Styles/ImageComponentStyles.css";
 import React, { useEffect, useState } from "react";
-
 import MobileImage from "../assets/images/pattern-bg-mobile.png";
 import DesktopImage from "../assets/images/pattern-bg-desktop.png";
 import Image from "next/image";
 
 const ImageComponent = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
-  const [ipAddress] = useState("206.190.175.42");
   const updateImg = () => {
     const width = window.innerWidth;
     width <= 501 ? setIsMobile(true) : setIsMobile(false);
@@ -18,6 +17,9 @@ const ImageComponent = () => {
   }, []);
   return (
     <div className="image-container">
+      <div className="title">
+        <span>IP Address Tracker</span>
+      </div>
       <Image
         priority
         className="image-styling"
