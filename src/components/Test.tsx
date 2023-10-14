@@ -9,9 +9,7 @@ export default function Test() {
   );
 
   async function callApi() {
-    const res = await fetch(
-      `${process.env.NEXT_PUBLIC_BASE_API_URL}/api/geolocation`
-    );
+    const res = await fetch(`/api/geolocation`);
     const data: GeolocationResponse = await res.json();
     console.log(data);
     setGeolocation(data);
