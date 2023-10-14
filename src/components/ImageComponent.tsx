@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import MobileImage from "../assets/images/pattern-bg-mobile.png";
 import DesktopImage from "../assets/images/pattern-bg-desktop.png";
 import Image from "next/image";
+import Input from "./Input";
 
 const ImageComponent = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -20,6 +21,10 @@ const ImageComponent = () => {
       <div className="title">
         <span>IP Address Tracker</span>
       </div>
+      <div className="input-placeholder">
+        <Input />
+      </div>
+
       <Image
         priority
         className="image-styling"

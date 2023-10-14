@@ -6,7 +6,6 @@ const DATA_SOURCE_URL = `https://geo.ipify.org/api/v2/country?apiKey=${process.e
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
   const ipAddress = searchParams.get("ipAddress");
-  console.log(ipAddress);
   let url = "";
   ipAddress
     ? (url = `${DATA_SOURCE_URL}&ipAddress=${ipAddress}`)

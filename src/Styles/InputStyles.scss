@@ -1,0 +1,8 @@
+@import "../Variables/Variables.scss";
+@import "../Breakpoints/Breakpoints.scss";
+.input-container {
+  @include mobile {
+    border: red solid 1px;
+    width: 100%;
+  }
+}

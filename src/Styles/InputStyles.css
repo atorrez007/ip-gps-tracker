@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-VariableFont_wght.ttf");
+}
+@media (min-width: 375px) {
+  .input-container {
+    border: red solid 1px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=InputStyles.css.map */

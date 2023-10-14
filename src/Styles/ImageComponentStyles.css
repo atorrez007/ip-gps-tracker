@@ -34,4 +34,11 @@
   font-weight: 500;
   color: white;
   font-size: 18px;
+}
+
+.input-placeholder {
+  position: absolute;
+  margin-top: 6em;
+  width: 100%;
+  justify-content: center;
 }/*# sourceMappingURL=ImageComponentStyles.css.map */

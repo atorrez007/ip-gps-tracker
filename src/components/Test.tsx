@@ -16,6 +16,7 @@ export default function Test() {
     const data: GeolocationResponse = await res.json();
     setGeolocation(data);
   }
+  // Will be used to fetch user's ip through ipify.
   useEffect(() => {
     const fetchIp = async () => {
       try {

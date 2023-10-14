@@ -1,9 +1,19 @@
 .container-styles {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  height: 100vh;
-  width: 100%;
+  @include mobile {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+
+  @include desktop {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
 }
 
 .map-container {
