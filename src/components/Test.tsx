@@ -14,7 +14,6 @@ export default function Test() {
       `/api/geolocation?ipAddress=${ipAddress ? ipAddress : null}`
     );
     const data: GeolocationResponse = await res.json();
-    // console.log(data);
     setGeolocation(data);
   }
   useEffect(() => {
@@ -22,7 +21,6 @@ export default function Test() {
       try {
         const res = await fetch("https://api.ipify.org?format=json");
         const data = await res.json();
-        console.log(data);
         setIpAddress(data.ip);
       } catch (err) {
         console.log(err);
