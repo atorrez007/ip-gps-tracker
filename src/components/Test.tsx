@@ -9,6 +9,7 @@ export default function Test() {
   async function callApi() {
     const res = await fetch("/api/geolocation");
     const data: GeolocationResponse = await res.json();
+    console.log(data);
     setGeolocation(data);
   }
 
@@ -16,9 +17,9 @@ export default function Test() {
     <div className="test">
       <ul>Server Component API Test</ul>
       <div className="test">
-        {geoLocation ? geoLocation.ip : ""}
-        {geoLocation ? geoLocation.location.region : ""}
-        {geoLocation ? geoLocation.isp : ""}
+        {geoLocation ? geoLocation?.ip : ""}
+        {geoLocation ? geoLocation.location?.region : ""}
+        {geoLocation ? geoLocation?.isp : ""}
 
         <button onClick={callApi}>Submit</button>
       </div>
