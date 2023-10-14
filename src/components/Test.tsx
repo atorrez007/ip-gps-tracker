@@ -1,12 +1,27 @@
-import React from "react";
+"use client";
+import { useState } from "react";
 import "../Styles/TestStyles.css";
+import { GeolocationResponse } from "@/Types/types";
 
-const Test = () => {
+export default function Test() {
+  const [geoLocation, setGeolocation] = useState<GeolocationResponse | null>();
+
+  async function callApi() {
+    const res = await fetch("/api/geolocation");
+    const data: GeolocationResponse = await res.json();
+    setGeolocation(data);
+  }
+
   return (
     <div className="test">
-      <ul>Testing</ul>
+      <ul>Server Component API Test</ul>
+      <div className="test">
+        {geoLocation ? geoLocation.ip : ""}
+        {geoLocation ? geoLocation.location.region : ""}
+        {geoLocation ? geoLocation.isp : ""}
+
+        <button onClick={callApi}>Submit</button>
+      </div>
     </div>
   );
-};
-
-export default Test;
+}
