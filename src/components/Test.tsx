@@ -4,7 +4,9 @@ import "../Styles/TestStyles.css";
 import { GeolocationResponse } from "@/Types/types";
 
 export default function Test() {
-  const [geoLocation, setGeolocation] = useState<GeolocationResponse | null>();
+  const [geoLocation, setGeolocation] = useState<GeolocationResponse | null>(
+    null
+  );
 
   async function callApi() {
     const res = await fetch(
