@@ -1,7 +1,7 @@
 import { GeolocationResponse } from "@/Types/types";
 import { NextResponse } from "next/server";
 
-const DATA_SOURCE_URL = `https://geo.ipify.org/api/v2/country?apiKey=${process.env.API_KEY}&ipAddress=`;
+const DATA_SOURCE_URL = `https://geo.ipify.org/api/v2/country?apiKey=${process.env.API_KEY}`;
 
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
