@@ -3,23 +3,28 @@
 .form-container {
   @include xs {
     display: flex;
+    min-width: 80%;
     max-width: 80%;
-    width: 80%;
+    width: 100%;
+    width: auto;
     height: 3em;
   }
 
   @include mobile {
     display: flex;
-    max-width: 50%;
-    width: 80%;
+    min-width: 50%;
+    max-width: 60%;
+    width: 60%;
     height: 3em;
   }
 
   @include desktop {
     display: flex;
     align-items: center;
+    min-width: 12em;
     max-width: 25em;
     width: 100%;
+    // width: auto;
     height: 3em;
   }
 }
