@@ -2,7 +2,7 @@
   font-family: "Rubik";
   src: url("../assets/fonts/Rubik-VariableFont_wght.ttf");
 }
-@media (min-width: 375px) {
+@media (min-width: 373px) {
   .form-container {
     display: flex;
     max-width: 80%;
@@ -27,7 +27,7 @@
   border-radius: 8px;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 373px) {
   .form-wrapper {
     display: flex;
     min-width: 100%;
@@ -49,7 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 4.088em;
+    height: 4.09em;
     border: none;
     background-color: black;
     color: white;
