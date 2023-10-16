@@ -2,6 +2,14 @@
   font-family: "Rubik";
   src: url("../assets/fonts/Rubik-VariableFont_wght.ttf");
 }
+@media (min-width: 250px) {
+  .form-container {
+    display: flex;
+    max-width: 80%;
+    width: 80%;
+    height: 3em;
+  }
+}
 @media (min-width: 375px) {
   .form-container {
     display: flex;
@@ -26,7 +34,7 @@
   }
 }
 
-@media (min-width: 375px) {
+@media (min-width: 250px) {
   .form-wrapper {
     display: flex;
     min-width: 100%;
