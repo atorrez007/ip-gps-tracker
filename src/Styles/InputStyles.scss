@@ -27,8 +27,10 @@
 }
 
 .input-container {
-  @include mobile {
+  @include xs {
     display: flex;
+    height: 3.5em;
+    border: 1px orange solid;
   }
   // border-radius: 8px;
 }
@@ -40,7 +42,7 @@
     width: 100%;
     input {
       box-sizing: border-box;
-      height: 3.5em;
+      height: auto;
       outline: none;
       border-top-left-radius: 8px;
       border-bottom-left-radius: 8px;
@@ -60,7 +62,7 @@
       box-sizing: border-box;
       justify-content: center;
       // min-height: 4.09em;
-      height: 4.09em;
+      height: auto;
       border: none;
       background-color: black;
       color: white;

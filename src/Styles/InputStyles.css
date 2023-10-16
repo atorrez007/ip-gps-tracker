@@ -28,9 +28,11 @@
   }
 }
 
-@media (min-width: 375px) {
+@media (min-width: 250px) {
   .input-container {
     display: flex;
+    height: 3.5em;
+    border: 1px orange solid;
   }
 }
 
@@ -42,7 +44,7 @@
   }
   .form-wrapper input {
     box-sizing: border-box;
-    height: 3.5em;
+    height: auto;
     outline: none;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -60,7 +62,7 @@
     align-items: center;
     box-sizing: border-box;
     justify-content: center;
-    height: 4.09em;
+    height: auto;
     border: none;
     background-color: black;
     color: white;
