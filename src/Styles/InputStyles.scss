@@ -45,9 +45,42 @@
     button {
       display: flex;
       align-items: center;
+      // box-sizing: border-box;
       justify-content: center;
       min-height: 4.09em;
-      height: 4.09em;
+      // height: 4.09em;
+      border: none;
+      background-color: black;
+      color: white;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      cursor: pointer;
+      width: 4em;
+    }
+  }
+  @include desktop {
+    display: flex;
+    width: 100%;
+    input {
+      height: 3.5em;
+      outline: none;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border: none;
+      width: 100%;
+      padding-left: 1em;
+      line-height: 18px;
+      font-size: 15px;
+      font-family: $mediumFont;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      // box-sizing: border-box;
+      justify-content: center;
+      min-height: 4.09em;
+      // height: 4.09em;
       border: none;
       background-color: black;
       color: white;
