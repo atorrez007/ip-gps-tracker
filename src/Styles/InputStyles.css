@@ -33,6 +33,7 @@
     width: 100%;
   }
   .form-wrapper input {
+    height: 3.5em;
     outline: none;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -49,6 +50,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 4.09em;
     border: none;
     background-color: black;
     color: white;
