@@ -22,9 +22,10 @@
   }
 }
 
-.input-container {
-  display: flex;
-  border-radius: 8px;
+@media (min-width: 375px) {
+  .input-container {
+    display: flex;
+  }
 }
 
 @media (min-width: 375px) {

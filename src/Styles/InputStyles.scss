@@ -20,8 +20,10 @@
 }
 
 .input-container {
-  display: flex;
-  border-radius: 8px;
+  @include mobile {
+    display: flex;
+  }
+  // border-radius: 8px;
 }
 
 .form-wrapper {
