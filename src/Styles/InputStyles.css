@@ -30,6 +30,7 @@
 @media (min-width: 375px) {
   .form-wrapper {
     display: flex;
+    min-width: 100%;
     width: 100%;
   }
   .form-wrapper input {

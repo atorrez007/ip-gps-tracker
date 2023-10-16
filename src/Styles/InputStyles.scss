@@ -12,7 +12,6 @@
   @include desktop {
     display: flex;
     align-items: center;
-
     max-width: 25em;
     width: 100%;
     height: 3em;
@@ -25,9 +24,10 @@
   border-radius: 8px;
 }
 
-@include mobile {
-  .form-wrapper {
+.form-wrapper {
+  @include mobile {
     display: flex;
+    min-width: 100%;
     width: 100%;
     input {
       height: 3.5em;
@@ -57,30 +57,3 @@
     }
   }
 }
-
-// input {
-//   height: 3.48em;
-//   outline: none;
-//   border-top-left-radius: 8px;
-//   border-bottom-left-radius: 8px;
-//   border: none;
-//   width: 100%;
-//   padding-left: 1em;
-//   line-height: 18px;
-//   font-size: 15px;
-//   font-family: $mediumFont;
-// }
-
-// button {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   height: 4.088em;
-//   border: none;
-//   background-color: black;
-//   color: white;
-//   border-top-right-radius: 8px;
-//   border-bottom-right-radius: 8px;
-//   cursor: pointer;
-//   width: 4em;
-// }
