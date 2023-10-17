@@ -33,19 +33,24 @@ const Input = () => {
   };
 
   return (
-    <div className="form-container">
-      <div className="input-container">
-        <form className="form-wrapper" onSubmit={handleFormSubmit}>
-          <input
-            type="text"
-            name="ipAddress"
-            placeholder="Search for any IP address or domain"
-            onChange={handleInputChange}
-          />
-          <button>
-            <Image src={iconArrow} alt="icon-arrow" />
-          </button>
-        </form>
+    <div className="input-and-feedback">
+      <div className="form-container">
+        <div className="input-container">
+          <form className="form-wrapper" onSubmit={handleFormSubmit}>
+            <input
+              type="text"
+              name="ipAddress"
+              placeholder="Search for any IP address or domain"
+              onChange={handleInputChange}
+            />
+            <button>
+              <Image src={iconArrow} alt="icon-arrow" />
+            </button>
+          </form>
+        </div>
+      </div>
+      <div className="feedback-container">
+        <p>Feedback</p>
       </div>
     </div>
   );

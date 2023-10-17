@@ -75,3 +75,15 @@
     }
   }
 }
+
+.input-and-feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-container {
+  border: 1px magenta solid;
+  margin-top: 6.5em;
+}
