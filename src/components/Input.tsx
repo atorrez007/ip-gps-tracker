@@ -3,31 +3,33 @@ import Image from "next/image";
 import "../Styles/InputStyles.css";
 import iconArrow from "../assets/images/icon-arrow.svg";
 import { FormEvent, useState } from "react";
+import { GeolocationResponse } from "@/Types/types";
 
 const Input = () => {
-  const [ipAddress, setIpAddress] = useState<string | null>();
-  const [formData, setFormData] = useState({
-    ipAddress: "",
-  });
-  const [errors, setErrors] = useState<any>({});
+  const [ipAddress, setIpAddress] = useState<string>();
+  const [geoLocation, setGeolocation] = useState<GeolocationResponse | null>(
+    null
+  );
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { value, name } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-    setIpAddress(value);
+    setIpAddress(e.target.value);
   };
 
   const handleFormSubmit = (e: FormEvent) => {
     e.preventDefault();
-    // Fix type later.
-    const validationErrors: any = {};
-    if (!formData.ipAddress.trim()) {
-      validationErrors.ipAddress = "IP Address required";
-    }
-    setErrors(validationErrors);
     setIpAddress(ipAddress);
+    !ipAddress ? alert("please enter an IP Address") : queryAddress(ipAddress);
+  };
+
+  const queryAddress = async (ipAddress: string | null) => {
+    try {
+      const res = await fetch(
+        `/api/geolocation?ipAddress=${ipAddress ? ipAddress : ""}`
+      );
+      const data = await res.json();
+      setGeolocation(data);
+    } catch (err) {
+      console.log(`error code: ${err}`);
+    }
   };
 
   return (
@@ -44,7 +46,6 @@ const Input = () => {
             <Image src={iconArrow} alt="icon-arrow" />
           </button>
         </form>
-        {errors.ipAddress && <span> {errors.ipAddress}</span>}
       </div>
     </div>
   );

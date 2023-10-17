@@ -6,3 +6,7 @@ export type GeolocationResponse = {
   };
   isp: string;
 };
+
+export type validationErrorType = {
+  ipAddress: string | null;
+};
