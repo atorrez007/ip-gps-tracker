@@ -1,3 +1,5 @@
+@import "../Variables/Variables.scss";
+@import "../Breakpoints/Breakpoints.scss";
 .container-styles {
   @include mobile {
     display: flex;
@@ -20,3 +22,15 @@
   height: 66%;
   // border: 1px red solid;
 }
+
+.input-and-feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// .feedback-container {
+//   border: 1px magenta solid;
+//   margin-top: 6.5em;
+// }

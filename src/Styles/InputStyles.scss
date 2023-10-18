@@ -76,14 +76,28 @@
   }
 }
 
-.input-and-feedback {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .feedback-container {
-  border: 1px magenta solid;
-  margin-top: 6.5em;
+  @include xs {
+    width: 60%;
+    height: 23em;
+    border: 1px magenta solid;
+    border-radius: 8px;
+    margin-top: 2em;
+  }
+
+  @include mobile {
+    width: 60%;
+    height: 23em;
+    border: 1px magenta solid;
+    border-radius: 8px;
+    margin-top: 2em;
+  }
+
+  @include desktop {
+    width: 90%;
+    height: 18em;
+    border: 1px magenta solid;
+    border-radius: 8px;
+    margin-top: 4em;
+  }
 }

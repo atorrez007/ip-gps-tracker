@@ -1,11 +1,33 @@
-.container-styles {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  height: 100vh;
-  width: 100%;
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-VariableFont_wght.ttf");
+}
+@media (min-width: 375px) {
+  .container-styles {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+}
+@media (min-width: 960px) {
+  .container-styles {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
 }
 
 .map-container {
   height: 66%;
+}
+
+.input-and-feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=ContainerStyles.css.map */

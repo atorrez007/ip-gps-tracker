@@ -4,6 +4,7 @@ import "../Styles/InputStyles.css";
 import iconArrow from "../assets/images/icon-arrow.svg";
 import { FormEvent, useEffect, useState } from "react";
 import { GeolocationResponse } from "@/Types/types";
+import Dashboard from "./Dashboard";
 
 const Input = () => {
   const [ipAddress, setIpAddress] = useState<string>();
@@ -32,21 +33,21 @@ const Input = () => {
     }
   };
 
-  useEffect(() => {
-    const fetchIp = async () => {
-      try {
-        const res = await fetch("https://api.ipify.org?format=json");
-        const data = await res.json();
-        console.log(
-          `data returned from api route in input component is: ${data.ip}`
-        );
-        return data;
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    fetchIp();
-  }, []);
+  // useEffect(() => {
+  //   const fetchIp = async () => {
+  //     try {
+  //       const res = await fetch("https://api.ipify.org?format=json");
+  //       const data = await res.json();
+  //       console.log(
+  //         `data returned from api route in input component is: ${data.ip}`
+  //       );
+  //       return data;
+  //     } catch (err) {
+  //       console.log(err);
+  //     }
+  //   };
+  //   fetchIp();
+  // }, []);
 
   return (
     <div className="input-and-feedback">
@@ -66,9 +67,11 @@ const Input = () => {
         </div>
       </div>
       <div className="feedback-container">
-        <p>Feedback</p>
+        <Dashboard />
+
         {/* ip address should return here */}
       </div>
+      <div className="map-container">Map</div>
     </div>
   );
 };
