@@ -2,7 +2,7 @@
 import Image from "next/image";
 import "../Styles/InputStyles.css";
 import iconArrow from "../assets/images/icon-arrow.svg";
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { GeolocationResponse } from "@/Types/types";
 
 const Input = () => {
@@ -32,6 +32,22 @@ const Input = () => {
     }
   };
 
+  useEffect(() => {
+    const fetchIp = async () => {
+      try {
+        const res = await fetch("/api/getStaticIP");
+        const data = await res.json();
+        console.log(
+          `data returned from api route in input component is: ${data.ip}`
+        );
+        return data;
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    fetchIp();
+  }, []);
+
   return (
     <div className="input-and-feedback">
       <div className="form-container">
@@ -51,6 +67,7 @@ const Input = () => {
       </div>
       <div className="feedback-container">
         <p>Feedback</p>
+        {/* ip address should return here */}
       </div>
     </div>
   );
