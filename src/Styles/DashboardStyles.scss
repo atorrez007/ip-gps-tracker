@@ -1,0 +1,9 @@
+@import "../Variables/Variables.scss";
+@import "../Breakpoints/Breakpoints.scss";
+
+.dashboard-container {
+  display: flex;
+  align-items: center;
+  height: 6em;
+  background-color: gray;
+}
