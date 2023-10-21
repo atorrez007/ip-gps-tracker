@@ -2,7 +2,6 @@
 import { useEffect } from "react";
 import "../Styles/ContainerStyles.css";
 import ImageComponent from "./ImageComponent";
-import Input from "./Input";
 
 const Container = () => {
   useEffect(() => {

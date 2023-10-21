@@ -2,7 +2,7 @@
 import Image from "next/image";
 import "../Styles/InputStyles.css";
 import iconArrow from "../assets/images/icon-arrow.svg";
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useState } from "react";
 import { GeolocationResponse } from "@/Types/types";
 import Dashboard from "./Dashboard";
 
@@ -55,8 +55,8 @@ const Input = () => {
         <div className="input-container">
           <form className="form-wrapper" onSubmit={handleFormSubmit}>
             <input
+              name="ipAddressInput"
               type="text"
-              name="ipAddress"
               placeholder="Search for any IP address or domain"
               onChange={handleInputChange}
             />
