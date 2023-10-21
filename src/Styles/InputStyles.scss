@@ -86,17 +86,20 @@
   }
 
   @include mobile {
-    width: 60%;
-    height: 23em;
+    display: flex;
+    flex-direction: column;
     border: 1px magenta solid;
     border-radius: 8px;
-    margin-top: 2em;
+    // max-width: 70%;
+    min-width: 60%;
+    height: auto;
+    width: auto;
   }
 
   @include desktop {
-    width: 90%;
+    max-width: 80%;
     height: 18em;
-    border: 1px magenta solid;
+    border: 1px yellow solid;
     border-radius: 8px;
     margin-top: 4em;
   }

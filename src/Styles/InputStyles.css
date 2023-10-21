@@ -87,18 +87,20 @@
 }
 @media (min-width: 375px) {
   .feedback-container {
-    width: 60%;
-    height: 23em;
+    display: flex;
+    flex-direction: column;
     border: 1px magenta solid;
     border-radius: 8px;
-    margin-top: 2em;
+    min-width: 60%;
+    height: auto;
+    width: auto;
   }
 }
 @media (min-width: 960px) {
   .feedback-container {
-    width: 90%;
+    max-width: 80%;
     height: 18em;
-    border: 1px magenta solid;
+    border: 1px yellow solid;
     border-radius: 8px;
     margin-top: 4em;
   }
