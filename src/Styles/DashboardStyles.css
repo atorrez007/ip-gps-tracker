@@ -82,10 +82,19 @@
   }
 }
 
-.horizontal {
-  width: 1px;
-  background-color: darkgray;
-  border: none;
-  height: 5em;
-  padding: 0px;
+@media (min-width: 375px) {
+  .horizontal {
+    width: 0px;
+    background-color: darkgray;
+    border: none;
+    height: 0em;
+  }
+}
+@media (min-width: 960px) {
+  .horizontal {
+    width: 1px;
+    background-color: darkgray;
+    border: none;
+    height: 5em;
+  }
 }/*# sourceMappingURL=DashboardStyles.css.map */
