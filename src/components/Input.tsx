@@ -71,7 +71,9 @@ const Input = () => {
 
         {/* ip address should return here */}
       </div>
-      <div className="map-container">Map</div>
+      <div className="map-container">
+        <h1>Map</h1>
+      </div>
     </div>
   );
 };

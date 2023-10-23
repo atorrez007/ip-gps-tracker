@@ -93,10 +93,10 @@
 @media (min-width: 960px) {
   .dashboard-item {
     display: flex;
-    padding: 1.5em;
     justify-content: flex-start;
     align-items: flex-start;
-    min-width: 9em;
+    min-width: 1em;
+    padding-left: 3.5em;
     width: 20em;
     max-height: 4em;
     height: auto;
