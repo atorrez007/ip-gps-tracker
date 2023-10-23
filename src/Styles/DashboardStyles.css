@@ -10,6 +10,7 @@
     justify-content: space-around;
     background-color: white;
     border-radius: 8px;
+    min-width: 17em;
   }
 }
 @media (min-width: 375px) {
@@ -44,16 +45,49 @@
     flex-direction: column;
     width: auto;
     height: auto;
+    padding: 1em;
+  }
+  .dashboard-item span {
+    font-family: "Rubik";
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 8px;
+    letter-spacing: 0.2em;
+    color: hsl(0, 0%, 59%);
+  }
+  .dashboard-item h2 {
+    font-family: "Rubik";
+    font-weight: 500;
+    width: auto;
+    margin-top: 0.3em;
   }
 }
 @media (min-width: 375px) {
   .dashboard-item {
     display: flex;
+    padding: 1em;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-width: 20em;
     width: auto;
-    height: auto;
+    padding-bottom: 0px;
+    height: 100%;
+    max-height: 5em;
+  }
+  .dashboard-item span {
+    font-family: "Rubik";
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 8px;
+    letter-spacing: 0.2em;
+    color: hsl(0, 0%, 59%);
+  }
+  .dashboard-item h2 {
+    font-family: "Rubik";
+    font-weight: 500;
+    width: auto;
+    margin-top: 0.3em;
   }
 }
 @media (min-width: 960px) {
@@ -62,7 +96,8 @@
     padding: 1.5em;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 15em;
+    min-width: 9em;
+    width: 20em;
     max-height: 4em;
     height: auto;
   }

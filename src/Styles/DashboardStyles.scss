@@ -9,6 +9,7 @@
     justify-content: space-around;
     background-color: white;
     border-radius: 8px;
+    min-width: 17em;
   }
 
   @include mobile {
@@ -42,25 +43,60 @@
     // min-width: 25em;
     width: auto;
     height: auto;
+    padding: 1em;
     // flex-direction: column;
     // border: 1px red solid;
+
+    span {
+      font-family: $mediumFont;
+      @include mediumFont700;
+      font-size: 8px;
+      letter-spacing: 0.2em;
+      color: $darkGray;
+    }
+
+    h2 {
+      @include mediumFont500;
+      // border: 1px solid orange;
+      width: auto;
+      margin-top: 0.3em;
+    }
   }
   @include mobile {
     // border: 1px red solid;
     display: flex;
+    padding: 1em;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    // min-width: 25em;
+    min-width: 20em;
     width: auto;
-    height: auto;
+    padding-bottom: 0px;
+    height: 100%;
+    max-height: 5em;
+
+    span {
+      font-family: $mediumFont;
+      @include mediumFont700;
+      font-size: 8px;
+      letter-spacing: 0.2em;
+      color: $darkGray;
+    }
+
+    h2 {
+      @include mediumFont500;
+      // border: 1px solid orange;
+      width: auto;
+      margin-top: 0.3em;
+    }
   }
   @include desktop {
     display: flex;
     padding: 1.5em;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 15em;
+    min-width: 9em;
+    width: 20em;
     max-height: 4em;
     height: auto;
 
