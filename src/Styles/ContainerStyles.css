@@ -10,6 +10,10 @@
     height: 100vh;
     width: 100%;
   }
+  .container-styles .map-container {
+    height: 100%;
+    width: 100%;
+  }
 }
 @media (min-width: 960px) {
   .container-styles {
@@ -19,10 +23,10 @@
     height: 100vh;
     width: 100%;
   }
-}
-
-.map-container {
-  height: 66%;
+  .container-styles .map-container {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .input-and-feedback {

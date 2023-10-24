@@ -66,14 +66,9 @@ const Input = () => {
           </form>
         </div>
       </div>
-      <div className="feedback-container">
+      {/* <div className="feedback-container">
         <Dashboard />
-
-        {/* ip address should return here */}
-      </div>
-      <div className="map-container">
-        <h1>Map</h1>
-      </div>
+      </div> */}
     </div>
   );
 };

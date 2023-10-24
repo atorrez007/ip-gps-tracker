@@ -2,6 +2,8 @@
 import { useEffect } from "react";
 import "../Styles/ContainerStyles.css";
 import ImageComponent from "./ImageComponent";
+import Map from "./Map";
+import Input from "./Input";
 
 const Container = () => {
   useEffect(() => {
@@ -22,6 +24,9 @@ const Container = () => {
   return (
     <div className="container-styles">
       <ImageComponent />
+      <section className="map-container">
+        <Map />
+      </section>
     </div>
   );
 };

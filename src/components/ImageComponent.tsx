@@ -5,6 +5,7 @@ import MobileImage from "../assets/images/pattern-bg-mobile.png";
 import DesktopImage from "../assets/images/pattern-bg-desktop.png";
 import Image from "next/image";
 import Input from "./Input";
+import Dashboard from "./Dashboard";
 
 const ImageComponent = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
