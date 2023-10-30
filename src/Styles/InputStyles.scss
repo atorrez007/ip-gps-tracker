@@ -3,6 +3,8 @@
 .form-container {
   @include xs {
     display: flex;
+    justify-content: center;
+    align-items: center;
     min-width: 80%;
     max-width: 80%;
     width: 100%;
@@ -24,7 +26,6 @@
     min-width: 12em;
     max-width: 25em;
     width: 100%;
-    // width: auto;
     height: 3em;
   }
 }
@@ -34,7 +35,17 @@
     display: flex;
     height: 3.5em;
   }
-  // border-radius: 8px;
+
+  @include mobile {
+    min-width: 100%;
+    width: 100%;
+    height: 3.5em;
+  }
+  @include desktop {
+    min-width: 100%;
+    width: 100%;
+    height: 3.5em;
+  }
 }
 
 .form-wrapper {
@@ -80,7 +91,6 @@
   @include xs {
     width: auto;
     height: auto;
-
     border-radius: 8px;
     margin-top: 2em;
     min-width: 19em;
@@ -90,9 +100,7 @@
   @include mobile {
     display: flex;
     flex-direction: column;
-
     border-radius: 8px;
-    // max-width: 70%;
     min-width: 60%;
     height: auto;
     width: auto;
@@ -102,7 +110,6 @@
   @include desktop {
     max-width: 80%;
     height: 18em;
-
     border-radius: 8px;
     margin-top: 4em;
     box-shadow: 0px 0px 3px darkgray;

@@ -5,6 +5,8 @@
 @media (min-width: 250px) {
   .form-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     min-width: 80%;
     max-width: 80%;
     width: 100%;
@@ -35,6 +37,20 @@
 @media (min-width: 250px) {
   .input-container {
     display: flex;
+    height: 3.5em;
+  }
+}
+@media (min-width: 375px) {
+  .input-container {
+    min-width: 100%;
+    width: 100%;
+    height: 3.5em;
+  }
+}
+@media (min-width: 960px) {
+  .input-container {
+    min-width: 100%;
+    width: 100%;
     height: 3.5em;
   }
 }

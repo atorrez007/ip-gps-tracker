@@ -12,7 +12,7 @@ function Map() {
     <ReactMapGL
       initialViewState={viewport}
       mapboxAccessToken={process.env.mapbox_key}
-      style={{ width: "100%", height: "100%" }}
+      style={{ width: "100%", height: "85%" }}
       mapStyle="mapbox://styles/atorr233/clo4i7ert00fc01p6adt5306j"
     ></ReactMapGL>
   );

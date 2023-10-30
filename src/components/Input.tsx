@@ -66,9 +66,6 @@ const Input = () => {
           </form>
         </div>
       </div>
-      {/* <div className="feedback-container">
-        <Dashboard />
-      </div> */}
     </div>
   );
 };
